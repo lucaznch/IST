@@ -299,13 +299,3 @@ transforma(Predicado, [P|R], L2, Ac) :-
     TermoC,
     append(Ac, [Aux], AcAux),
     transforma(Predicado, R, L2, AcAux).
-
-
-
-aaa(L, L2) :- aaa(L ,L2, []).
-aaa([], L, L) :- !.
-aaa([P|R], L2, Ac) :-
-    P,
-    write(P),
-    append(Ac, [1], AcAux),
-    aaa(R, L2, AcAux).
